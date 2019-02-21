@@ -1,2 +1,2 @@
 # react
-react,echarts,fabric,react-amap,dva,
+react,echarts,fabric,react-amap,dva,arcgis
