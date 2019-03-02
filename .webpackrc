@@ -1,0 +1,10 @@
+{
+    "extraBabelPlugins": [
+          "dva-hmr",
+           [ "import",{
+            "libraryName": "antd",
+            "libraryDirectory":"es", 
+            "style": "css" 
+            }]
+        ]
+}
