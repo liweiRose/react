@@ -35,6 +35,7 @@ class DynamicFieldSet extends React.Component {
               <li><Link to={'formdamo'}>表单组件（动态增删文件）</Link></li>
               <li><Link to={'drawcanvas'}>Canvas组件库Fabric的使用</Link></li>
               <li><Link to={'mapline'}>使用react-amap画一条线</Link></li>
+              <li><Link to={'speech'}>语音识别</Link></li>
               <li><Link to={'chinabeauty'}>排行榜</Link></li>
             </ul>
           </div>
