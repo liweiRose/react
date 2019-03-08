@@ -30,7 +30,9 @@ class page extends React.Component {
   render() {
     
     return (
-      <canvas id="main" width="200" height="200"></canvas>
+      <div style={{background:'#a9a99f',display:'inline-block'}}>
+        <canvas id="main" width="1000" height="600"></canvas>
+      </div>
     );
   }
 }
