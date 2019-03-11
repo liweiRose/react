@@ -6,6 +6,7 @@ import Drawcanvas from './routes/Drawcanvas/Drawcanvas';
 import Mapline from './routes/Mapline/Mapline';
 import ChinaBeauty from './routes/ChinaBeauty/ChinaBeauty';
 import Speech from './routes/Speech/Speech';
+import IEcompatible from './routes/IEcompatible/IEcompatible';
 
 function RouterConfig({ history }) {
   return (
@@ -19,6 +20,7 @@ function RouterConfig({ history }) {
         <Route path="/mapline" component={Mapline} />
         <Route path="/chinabeauty" component={ChinaBeauty} />
         <Route path="/speech" component={Speech} />
+        <Route path="/iecompatible" component={IEcompatible} />
       </div>
     </Router>
   );

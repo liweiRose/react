@@ -37,6 +37,7 @@ class DynamicFieldSet extends React.Component {
               <li><Link to={'mapline'}>使用react-amap画一条线</Link></li>
               <li><Link to={'speech'}>语音识别</Link></li>
               <li><Link to={'chinabeauty'}>排行榜</Link></li>
+              <li><Link to={'iecompatible'}>IE兼容问题</Link></li>
             </ul>
           </div>
           
