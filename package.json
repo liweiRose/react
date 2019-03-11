@@ -9,11 +9,14 @@
   "dependencies": {
     "antd": "^3.7.3",
     "babel-plugin-import": "^1.8.0",
+    "canvas2image": "^1.0.5",
     "dva": "^2.3.1",
     "fabric": "^2.3.4",
+    "html2canvas": "^1.0.0-alpha.12",
     "react": "^16.2.0",
     "react-amap": "^1.2.7",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-free-scrollbar": "^0.3.2"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.3.2",
