@@ -7,6 +7,7 @@ import Mapline from './routes/Mapline/Mapline';
 import ChinaBeauty from './routes/ChinaBeauty/ChinaBeauty';
 import Speech from './routes/Speech/Speech';
 import IEcompatible from './routes/IEcompatible/IEcompatible';
+import table from './routes/table/table';
 
 function RouterConfig({ history }) {
   return (
@@ -21,6 +22,7 @@ function RouterConfig({ history }) {
         <Route path="/chinabeauty" component={ChinaBeauty} />
         <Route path="/speech" component={Speech} />
         <Route path="/iecompatible" component={IEcompatible} />
+        <Route path="/table" component={table} />
       </div>
     </Router>
   );
