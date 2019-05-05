@@ -91,6 +91,42 @@ export default class Util {
         return time;
     }
 
+/**
+  * @param data 需要转换结构的源数据
+  * @param needColNum 需要增加table序号列数据
+  * @param needKey 需要增加唯一标识key
+  * @param currentPage 当前页
+  * @param pageSize 每页数据数目
+  * @returns {*} 转换后的数据
+  */
+    static transformArrayData(data, needColNum, needKey, currentPage, pageSize) {
+        // 需要添加table序号
+        const obj = data;
+        if (needColNum) {
+            for (let i = 0; i < obj.length; i += 1) {
+                // 有分页
+                if (currentPage && pageSize) {
+                    obj[i].num = pageSize * (currentPage - 1) + i + 1;
+                    // 无分页
+                } else {
+                    obj[i].num = i + 1;
+                }
+            }
+            // 需要添加唯一标识key
+        }
+        // 添加Key
+        if (needKey) {
+            for (let i = 0; i < obj.length; i += 1) {
+                // 若数据不存在key字段,则增加唯一标识key
+                if (!obj[i].key) obj[i].key = i;
+            }
+        }
+        if (!needColNum && !needColNum) {
+            console.info('检查transformArrayData方法参数(needColNum,needKey),返回数据结构未改变');
+        }
+        return obj;
+    }
+
     /***
    * @columns 表格的columns属性
    * @returns {number} table宽度
