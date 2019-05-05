@@ -7,6 +7,8 @@ node_js:
   - '8'
 
 script:
+  - npm uninstall history --save-dev
+  - npm install history@4.7.2 --save-dev
   - npm run build
 
 branches:
